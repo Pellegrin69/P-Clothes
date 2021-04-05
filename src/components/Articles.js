@@ -4,6 +4,7 @@ const Articles = (props) => (
 
     <div>
         <li>{props.id} - {props.title} - {props.taille}</li>
+        <img src={props.photo} alt={props.title}/>
     </div>
 
 

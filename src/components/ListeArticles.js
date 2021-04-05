@@ -10,14 +10,14 @@ const ListeArticles = () => {
                 title: 'Veste Nike',
                 prix: '35',
                 taille: 'L',
-                photo: ''
+                photo: '../photos/veste_nike.jpg'
             },
             {
                 id: 2,
                 title: 'Jogging Puma',
                 prix: '20',
                 taille: 'S',
-                photo: ''
+                photo: '../photos/jogging_puma.gif'
             }
 
         ]
@@ -25,7 +25,7 @@ const ListeArticles = () => {
     return(
         <div>
             <ul>
-                {articles.map((article) => (<Articles id={article.id} title={article.title} taille={article.taille}/>))}
+                {articles.map((article) => (<Articles id={article.id} title={article.title} taille={article.taille} photo={article.photo}/>))}
             </ul>
         </div>
     )
