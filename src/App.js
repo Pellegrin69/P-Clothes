@@ -1,7 +1,8 @@
 import React from 'react'
 import './App.css';
-import Articles from "./components/Articles";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ListeArticles from "./components/ListeArticles";
 
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <Articles/>
+            <ListeArticles/>
+            <Footer/>
         </div>
     );
 }

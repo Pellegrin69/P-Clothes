@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Articles = () => (
+const Articles = (props) => (
 
-    <>
-            <h1>Voilà les articles</h1>>
-    </>
+    <div>
+        <li>{props.id} - {props.title} - {props.taille}</li>
+    </div>
 
 
 );
