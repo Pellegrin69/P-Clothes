@@ -1,11 +1,15 @@
+import React from 'react'
 import './App.css';
+import Articles from "./components/Articles";
+
 
 function App() {
-  return (
-    <div className="App">
-      <h1>P-Clothes</h1>
-    </div>
-  );
+
+    return (
+        <div className="App">
+            <Articles/>
+        </div>
+    );
 }
 
 export default App;
