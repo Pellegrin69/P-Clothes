@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Articles from "./Articles";
 
 const ListeArticles = () => {
@@ -22,16 +22,53 @@ const ListeArticles = () => {
 
         ]
     );
-    return(
-        <div>
-            <ul>
-                {articles.map((article) => (<Articles id={article.id} title={article.title} taille={article.taille} photo={article.photo}/>))}
-            </ul>
-        </div>
-    )
 
+    let [searchTerm, setSearhTerm] = useState("");
+
+    const handleSearchTerm = (e) => {
+        let value = e.target.value;
+        setSearhTerm(value);
+    };
+
+    console.log(searchTerm);
+
+    return (
+        <>
+            <div className="search">
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="Rechercher"
+                    onChange={handleSearchTerm}
+                />
+
+            </div>
+            <div>
+                <ul>
+                    {articles.filter((val) => {
+                        return val.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())
+                    })
+                        .map((val) =>
+                            (
+                                <div key={val.id}>
+                                    {val.title}
+                                    {val.taille}
+
+                                </div>))}
+                </ul>
+            </div>
+        </>
+    )
 
 
 };
 
 export default ListeArticles;
+
+/*<Articles
+    id={val.id}
+    title={val.title}
+    taille={val.taille}
+    photo={val.photo}
+/>*/
