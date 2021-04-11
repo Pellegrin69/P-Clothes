@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import Articles from "./Articles";
 
 const ListeArticles = () => {
@@ -51,9 +51,11 @@ const ListeArticles = () => {
                     })
                         .map((val) =>
                             (
-                                <div key={val.id}>
-                                    {val.title}
-                                    {val.taille}
+                                <div key={val.id} id="articleId">
+                                    <h2>{val.title}</h2>
+                                    <img src="../photos/veste_nike.jpg" alt="slt"/>
+                                    <p id="prix">prix : {val.prix}€</p>
+                                    <p id="taille">taille : {val.taille}</p>
 
                                 </div>))}
                 </ul>
