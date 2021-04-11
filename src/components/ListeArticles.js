@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Articles from "./Articles";
+import photo from "../photos/veste_nike.jpg"
 
 const ListeArticles = () => {
 
@@ -25,7 +26,7 @@ const ListeArticles = () => {
     return(
         <div>
             <ul>
-                {articles.map((article) => (<Articles id={article.id} title={article.title} taille={article.taille} photo={article.photo}/>))}
+                {articles.map((article) => (<Articles id={article.id} title={article.title} taille={article.taille} photo={(photo)}/>))}
             </ul>
         </div>
     )
