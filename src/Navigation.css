@@ -1,0 +1,16 @@
+li{
+    list-style: none;
+    color: black;
+    background-color: whitesmoke;
+    width: 35%;
+    border: lightslategray 2px solid;
+    transition: 1s;
+    font-family: "Calibri";
+    text-decoration: none;
+}
+li:hover{
+    background-color: lightskyblue;
+    color: darkblue;
+    transition: 1s;
+    width: 55%;
+}
