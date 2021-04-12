@@ -18,49 +18,49 @@ const ListeArticles = () => {
                 title: 'Jogging Puma',
                 prix: '20',
                 taille: 'S',
-                photo: 'jogging_puma.gif'
+                photo: 'jogging_puma.jpg'
             },
             {
                 id: 3,
                 title: 'Short Nike',
                 prix: '15',
                 taille: 'XL',
-                photo: 'veste_nike.jpg'
+                photo: 'short_nike.jpg'
             },
             {
                 id: 4,
                 title: 'Casquette NY',
                 prix: '20',
                 taille: 'M',
-                photo: 'veste_nike.jpg'
+                photo: 'casquette_ny.jpg'
             },
             {
                 id: 5,
                 title: 'Tee-Shirt Puma',
                 prix: '18',
                 taille: 'XS',
-                photo: 'veste_nike.jpg'
+                photo: 't_shirt_puma.jpg'
             },
             {
                 id: 6,
                 title: 'Maillot Foot Barçelone Nike',
                 prix: '70',
                 taille: 'M',
-                photo: 'veste_nike.jpg'
+                photo: 'maillot_barca.jpg'
             },
             {
                 id: 7,
                 title: 'Jean Hollister',
                 prix: '25',
                 taille: 'XL',
-                photo: 'veste_nike.jpg'
+                photo: 'jean_hollister.jpg'
             },
             {
                 id: 8,
                 title: 'Bob YW',
                 prix: '14',
                 taille: 'L',
-                photo: 'veste_nike.jpg'
+                photo: 'bob_yw.jpg'
             }
 
         ]
