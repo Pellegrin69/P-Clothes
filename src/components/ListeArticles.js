@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Articles from "./Articles";
-import photo from "../photos/veste_nike.jpg"
 
 const ListeArticles = () => {
 
@@ -11,26 +10,25 @@ const ListeArticles = () => {
                 title: 'Veste Nike',
                 prix: '35',
                 taille: 'L',
-                photo: '../photos/veste_nike.jpg'
+                photo: 'veste_nike.jpg'
             },
             {
                 id: 2,
                 title: 'Jogging Puma',
                 prix: '20',
                 taille: 'S',
-                photo: '../photos/jogging_puma.gif'
+                photo: 'jogging_puma.gif'
             }
 
         ]
     );
-    return(
+    return (
         <div>
             <ul>
-                {articles.map((article) => (<Articles id={article.id} title={article.title} taille={article.taille} photo={(photo)}/>))}
+                {articles.map((article) => (<Articles {...article} />))}
             </ul>
         </div>
     )
-
 
 
 };
