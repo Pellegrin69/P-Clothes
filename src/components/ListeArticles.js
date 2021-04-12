@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Articles from "./Articles";
+import '../ListeArticles.css'
 
 const ListeArticles = () => {
 
@@ -91,27 +92,11 @@ const ListeArticles = () => {
                     {articles.filter((val) => {
                         return val.title.toLowerCase().includes(chercheArticle.toLocaleLowerCase())
                     })
-                        .map((val) => (
-                            <div>
-                                <ul>
-                                    {articles.map((article) => (<Articles {...article} />))}
-                                </ul>
-                            </div>
-                        ))}
+                        .map((val) => (<Articles {...val} />))}
                 </ul>
             </div>
         </>
     )
 };
-/*
-<div key={val.id} id="articleId">
-                                    <h2>{val.title}</h2>
-                                    <img src="../photos/veste_nike.jpg" alt="slt"/>
-                                    <p id="prix">prix : {val.prix}€</p>
-                                    <p id="taille">taille : {val.taille}</p>
-                                    <Favori/>
 
-
-                                </div>
-*/
 export default ListeArticles;
