@@ -7,11 +7,9 @@ const Form = (props) => {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <input type="text" placeholder="First name" name="name" ref={register({required: true, maxLength: 80})}/>
-            <input type="number" placeholder="Age" name="age"
-                   ref={register({required: true, minLength: 1, maxLength: 3})}/>
-            <input type="tel" placeholder="Mobile number" name="numero"
-                   ref={register({required: true, minLength: 6, maxLength: 12})}/>
+            <input type="text" placeholder="Titre du produit" name="title" {...register('title')}/>
+            <input type="number" placeholder="Prix" name="prix" {...register('prix')}/>
+            <input type="select" placeholder="taille" name="taille" {...register('taille')}/>
 
 
             <input type="submit"/>
