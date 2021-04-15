@@ -1,12 +1,12 @@
 import React from 'react';
+import Favoris from "./Favoris";
+import Article from "./Articles";
 
-function MontreFavori(){
-
-
-    return(
-        <h1>Wow!</h1>
+function MontreFavori(val) {
 
 
+    return (
+        <p></p>
     )
 }
 

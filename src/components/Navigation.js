@@ -8,15 +8,15 @@ function Navigation() {
     return (
         <ul>
             <Link to="/">
-                <li>Accueil</li>
+                <li id="liNav">Accueil</li>
             </Link>
 
             <Link to="/MontreFavoris">
-                <li>Favoris</li>
+                <li id="liNav">Favoris</li>
             </Link>
 
             <Link to="/Contact">
-                <li>Contact</li>
+                <li id="liNav">Contact</li>
             </Link>
         </ul>
     )

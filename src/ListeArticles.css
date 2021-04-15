@@ -12,7 +12,6 @@
     width: 30%;
     padding: 4px;
     opacity: 85%;
-    position: relative;
 }
 
 #searchBar:hover{
@@ -32,6 +31,9 @@
     transition: 0.2s;
 }
 
+#blocLinkedin{
+    text-align:center;
+}
 
 
 
