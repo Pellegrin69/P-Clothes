@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Articles from "./Articles";
+import Form from "./Form";
 import '../ListeArticles.css'
 
 const ListeArticles = () => {
@@ -65,6 +66,8 @@ const ListeArticles = () => {
 
         ]
     );
+
+    const addArticle = (newArticle) => setArticles([...articles, newArticle]);
 
     let [chercheArticle, setChercheArticle] = useState("");
 
