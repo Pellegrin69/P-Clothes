@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Articles from "./Articles";
 import '../ListeArticles.css'
+import Form from "./Form";
 
 const ListeArticles = () => {
 
@@ -73,6 +74,14 @@ const ListeArticles = () => {
         ]
     );
 
+    const toogleFav = (id) => setArticles(articles.map(a => {
+        if (a.id === id) {
+            a.favori = !a.favori
+        }
+        return a;
+    }));
+
+
     const addArticle = (article) => setArticles([...articles, article]);
 
     let [chercheArticle, setChercheArticle] = useState("");
@@ -99,11 +108,10 @@ const ListeArticles = () => {
                 <ul>
                     {articles.filter((val) => {
                         return val.title.toLowerCase().includes(chercheArticle.toLocaleLowerCase())
-                    })
-                        .map((val) => (<Articles {...val} />))}
+                    }).map((val) => (<Articles toogleFav={toogleFav} {...val} />))}
                 </ul>
             </div>
-            <h3>Vous souhaitez ajouter un article ?</h3>
+            <h3>Souhaitez-vous ajouter un article ?</h3>
             <Form addArticle={addArticle}/>
         </>
     )
