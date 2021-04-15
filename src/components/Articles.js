@@ -10,7 +10,7 @@ const Articles = (props) => {
                 <img id="imgArticles" src={href} alt={props.title} height="100" width="100"/>
                 <p id="prix">prix : {props.prix}€</p>
                 <p id="taille">taille : {props.taille}</p>
-                <Favori/>
+                <Favori isFav={props.favori} />
             </div>
         )
     }

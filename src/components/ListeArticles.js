@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Articles from "./Articles";
-import Form from "./Form";
 import '../ListeArticles.css'
 
 const ListeArticles = () => {
@@ -12,58 +11,65 @@ const ListeArticles = () => {
                 title: 'Veste Nike',
                 prix: '35',
                 taille: 'L',
-                photo: 'veste_nike.jpg'
+                photo: 'veste_nike.jpg',
+                favori: false
             },
             {
                 id: 2,
                 title: 'Jogging Puma',
                 prix: '20',
                 taille: 'S',
-                photo: 'jogging_puma.jpg'
+                photo: 'jogging_puma.jpg',
+                favori: true
             },
             {
                 id: 3,
                 title: 'Short Nike',
                 prix: '15',
                 taille: 'XL',
-                photo: 'short_nike.jpg'
+                photo: 'short_nike.jpg',
+                favori: true
             },
             {
                 id: 4,
                 title: 'Casquette NY',
                 prix: '20',
                 taille: 'M',
-                photo: 'casquette_ny.jpg'
+                photo: 'casquette_ny.jpg',
+                favori: false
             },
             {
                 id: 5,
                 title: 'Tee-Shirt Puma',
                 prix: '18',
                 taille: 'XS',
-                photo: 't_shirt_puma.jpg'
+                photo: 't_shirt_puma.jpg',
+                favori: false
             },
             {
                 id: 6,
                 title: 'Maillot Foot Barçelone Nike',
                 prix: '70',
                 taille: 'M',
-                photo: 'maillot_barca.jpg'
+                photo: 'maillot_barca.jpg',
+                favori: false
             },
             {
                 id: 7,
                 title: 'Jean Hollister',
                 prix: '25',
                 taille: 'XL',
-                photo: 'jean_hollister.jpg'
+                photo: 'jean_hollister.jpg',
+                favori: false
             },
             {
                 id: 8,
                 title: 'Bob YW',
                 prix: '14',
                 taille: 'L',
-                photo: 'bob_yw.jpg'
+                photo: 'bob_yw.jpg',
+                favori: false
             }
-
         ]
     );
 
@@ -75,8 +81,6 @@ const ListeArticles = () => {
         let value = e.target.value;
         setChercheArticle(value);
     };
-
-    console.log(chercheArticle);
 
     return (
         <>
