@@ -67,7 +67,7 @@ const ListeArticles = () => {
         ]
     );
 
-    const addArticle = (newArticle) => setArticles([...articles, newArticle]);
+    const addArticle = (article) => setArticles([...articles, article]);
 
     let [chercheArticle, setChercheArticle] = useState("");
 
@@ -80,6 +80,7 @@ const ListeArticles = () => {
 
     return (
         <>
+
             <div className="search">
                 <input
                     type="text"
@@ -98,6 +99,8 @@ const ListeArticles = () => {
                         .map((val) => (<Articles {...val} />))}
                 </ul>
             </div>
+            <h3>Vous souhaitez ajouter un article ?</h3>
+            <Form addArticle={addArticle}/>
         </>
     )
 };
