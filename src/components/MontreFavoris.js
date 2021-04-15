@@ -2,11 +2,10 @@ import React from 'react';
 import Favoris from "./Favoris";
 import Article from "./Articles";
 
-function MontreFavori(val) {
-
+const MontreFavori = () => {
 
     return (
-        <p></p>
+        <div></div>
     )
 }
 
