@@ -106,9 +106,11 @@ const ListeArticles = () => {
             </div>
             <div>
                 <ul>
-                    {articles.filter((val) => {
-                        return val.title.toLowerCase().includes(chercheArticle.toLocaleLowerCase())
-                    }).map((val) => (<Articles toogleFav={toogleFav} key={val.id} {...val} />))}
+                    {articles.filter((val) => (
+                        val.title.toLowerCase().includes(chercheArticle.toLocaleLowerCase())
+                    )).map((val) => (
+                        <Articles toogleFav={toogleFav} key={val.id} {...val} />
+                    ))}
                 </ul>
             </div>
             <h3>Souhaitez-vous ajouter un article ?</h3>
