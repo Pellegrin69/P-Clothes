@@ -5,6 +5,8 @@ const Form = (props) => {
     const {register, handleSubmit} = useForm();
     const onSubmit = data => props.addArticle(data);
 
+    
+
     return (
         <div id="formulaire">
             <form onSubmit={handleSubmit(onSubmit)}>
