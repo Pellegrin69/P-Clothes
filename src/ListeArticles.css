@@ -8,6 +8,11 @@
     margin: 10px;
 }
 
+#articleId > img {
+    width : 100%;
+    height: auto;
+}
+
 #searchBar{
     width: 30%;
     padding: 4px;
@@ -42,6 +47,17 @@
 
 center{
     font-size: x-large;
+}
+
+
+form > input{
+    padding: 4px;
+    margin: 2px;
+}
+
+form > select{
+    padding: 4px;
+    margin: 1px;
 }
 
 

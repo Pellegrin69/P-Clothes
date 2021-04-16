@@ -13,12 +13,12 @@ const Articles = (props) => {
     return (
         <div id='articleId'>
             <h2>{props.title}</h2>
-            <img id="imgArticles" src={href} alt={props.title} height="100" width="100"/>
+            <img id="imgArticles" src={href} alt={props.title}/>
             <p id="prix">Prix : {props.prix}€</p>
             <p id="taille">Taille : {props.taille}</p>
             <Favori isFav={props.favori} toogleFav={toogleFav}/>
         </div>
     )
-}
+};
 
 export default Articles;
