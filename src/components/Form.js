@@ -6,14 +6,25 @@ const Form = (props) => {
     const onSubmit = data => props.addArticle(data);
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <input type="text" placeholder="Titre du produit" name="title" {...register('title')}/>
-            <input type="number" placeholder="Prix" name="prix" {...register('prix')}/>
-            <input type="select" placeholder="taille" name="taille" {...register('taille')}/>
+        <div id="formulaire">
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <input type="text" placeholder="Titre du produit" name="title" {...register('title')}/>
+                <br/>
+                <input type="number" placeholder="Prix" name="prix" {...register('prix')}/>
+                <br/>
+                <select placeholder="taille" name="taille" {...register('taille')}>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <input type="file" name="photo" {...register('photo')} accept="image/*"/>
 
 
-            <input type="submit"/>
-        </form>
+                <input type="submit"/>
+            </form>
+        </div>
     );
 };
 
