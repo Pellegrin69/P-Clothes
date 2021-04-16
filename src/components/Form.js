@@ -2,7 +2,7 @@ import React from 'react';
 import {useForm} from 'react-hook-form';
 
 const Form = (props) => {
-    const {register, handleSubmit, errors} = useForm();
+    const {register, handleSubmit} = useForm();
     const onSubmit = data => props.addArticle(data);
 
     return (

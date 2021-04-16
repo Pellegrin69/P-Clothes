@@ -1,25 +1,21 @@
-import React, {useState} from 'react'
+import React from 'react'
 
-function Favori() {
-    let [favori, setFavori] = useState(false);
+const Favori = ({isFav, toogleFav}) => {
     let etatFavori;
     let boutonFavori;
 
-    if(favori === false){
+    if (isFav) {
+        etatFavori = '❤';
+        boutonFavori = 'Retirer des favoris';
+    } else {
         etatFavori = '♡';
         boutonFavori = 'Ajouter aux favoris';
     }
-    else{
-        etatFavori = '❤';
-        boutonFavori = 'Retirer des favoris';
-    }
 
-    return(
+    return (
         <div>
             <p>{etatFavori}</p>
-            <button id="boutonFav" onClick={() => setFavori(!favori)}>
-                {boutonFavori}
-            </button>
+            <button id="boutonFav" onClick={() => toogleFav()}> {boutonFavori} </button>
         </div>
     )
 }
