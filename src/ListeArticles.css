@@ -1,4 +1,4 @@
-#articleId{
+#articleId {
     border: solid gray 2px;
     background-color: whitesmoke;
     padding: 10px;
@@ -9,62 +9,77 @@
 }
 
 #articleId > img {
-    width : 100%;
+    width: 100%;
     height: auto;
 }
 
-#searchBar{
+#searchBar {
     width: 30%;
     padding: 4px;
     opacity: 85%;
 }
 
-#searchBar:hover{
+#searchBar:hover {
     opacity: 100%;
 }
 
 
-#boutonFav{
+#boutonFav {
     padding: 2px;
     border-bottom-color: gray;
     border-radius: 10px;
     transition: 0.2s;
 }
 
-#boutonFav:hover{
+#boutonFav:hover {
     background-color: darkseagreen;
     transition: 0.2s;
 }
 
-#blocLinkedin{
-    text-align:center;
+#blocLinkedin {
+    text-align: center;
 }
 
-#logo_linkedin{
+#logo_linkedin {
     width: 5%;
     border-radius: 10px;
 }
 
-center{
+center {
     font-size: x-large;
 }
 
 
-form > input{
+form > input {
     padding: 4px;
     margin: 2px;
+    width: 20%;
+
 }
 
-form > select{
+form > select {
     padding: 4px;
     margin: 1px;
 }
 
-#fond_decran{
+#formulaire {
+    margin-left : 5%;
+}
+
+#fond_decran {
     width: 100%;
     height: 80%;
 }
 
+#boutonSubmit{
+    border: solid darkslateblue 2px;
+    transition: 0.5s;
+}
+
+#boutonSubmit:hover{
+    background-color: skyblue;
+    transition: 0.2s;
+}
 
 
 

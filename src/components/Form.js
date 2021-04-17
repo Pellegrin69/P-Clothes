@@ -5,14 +5,14 @@ const Form = (props) => {
     const {register, handleSubmit} = useForm();
     const onSubmit = data => props.addArticle(data);
 
-    
 
     return (
         <div id="formulaire">
+            <h3>Souhaitez-vous ajouter un article ?</h3>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input type="text" placeholder="Titre du produit" name="title" {...register('title')}/>
+                <input type="text" placeholder="Titre du produit" name="title" required{...register('title')}/>
                 <br/>
-                <input type="number" placeholder="Prix" name="prix" {...register('prix')}/>
+                <input type="number" placeholder="Prix" name="prix" required {...register('prix')}/>
                 <br/>
                 <select placeholder="taille" name="taille" {...register('taille')}>
                     <option value="XS">XS</option>
@@ -22,9 +22,8 @@ const Form = (props) => {
                     <option value="XL">XL</option>
                 </select>
                 <input type="file" name="photo" {...register('photo')} accept="image/*"/>
-
-
-                <input type="submit"/>
+                <br/>
+                <input type="submit" id="boutonSubmit"/>
             </form>
         </div>
     );

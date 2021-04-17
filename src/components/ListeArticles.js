@@ -49,7 +49,7 @@ const ListeArticles = () => {
             },
             {
                 id: 6,
-                title: 'Maillot Foot Barçelone Nike',
+                title: 'Maillot Barçelone Nike',
                 prix: '70',
                 taille: 'M',
                 photo: 'maillot_barca.jpg',
@@ -115,7 +115,7 @@ const ListeArticles = () => {
                     ))}
                 </ul>
             </div>
-            <h3>Souhaitez-vous ajouter un article ?</h3>
+
             <Form addArticle={addArticle}/>
         </>
     )
